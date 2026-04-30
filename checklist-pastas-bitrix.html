@@ -3,7 +3,7 @@
 <head><meta charset="UTF-8">
 <style>
   body { font-family: Arial, sans-serif; max-width: 860px; margin: 0 auto; padding: 24px; color: #1C2B40; background: #fff; font-size: 16px; }
-
+ 
   /* PROGRESS */
   .prog-wrap { position: sticky; top: 0; z-index: 100; background: #131E2D; padding: 10px 20px; border-radius: 6px; margin-bottom: 20px; display: flex; align-items: center; gap: 14px; border-bottom: 2px solid #C9A55A; }
   .prog-label { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #C9A55A; font-weight: 700; white-space: nowrap; }
@@ -12,7 +12,7 @@
   .prog-count { font-size: 13px; color: rgba(255,255,255,0.45); white-space: nowrap; }
   .prog-reset { background: none; border: 1px solid rgba(201,165,90,0.4); color: #C9A55A; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; cursor: pointer; border-radius: 3px; font-family: Arial, sans-serif; }
   .prog-reset:hover { background: rgba(201,165,90,0.12); }
-
+ 
   /* FASE TABS */
   .fase-tabs { display: flex; gap: 0; margin-bottom: 24px; border-bottom: 2px solid #e0e0e0; }
   .fase-tab { padding: 12px 22px; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; color: #999; transition: all .2s; }
@@ -20,23 +20,23 @@
   .fase-tab:hover:not(.active) { color: #1C2B40; }
   .fase { display: none; }
   .fase.active { display: block; }
-
+ 
   /* HEADER */
   .hdr { background: #131E2D; padding: 28px 32px; border-radius: 6px; margin-bottom: 24px; border-bottom: 3px solid #C9A55A; }
   .hdr-firm { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #C9A55A; font-weight: 700; margin-bottom: 8px; }
   .hdr-title { font-size: 30px; color: #fff; font-weight: 300; margin-bottom: 6px; }
   .hdr-title span { color: #C9A55A; font-style: italic; }
   .hdr-sub { font-size: 13px; color: rgba(255,255,255,0.4); }
-
+ 
   /* FASE HEADER */
   .fase-hdr { background: #131E2D; border-left: 4px solid #C9A55A; padding: 16px 20px; border-radius: 4px; margin-bottom: 20px; display: flex; gap: 14px; align-items: flex-start; }
   .fase-hdr-icon { font-size: 24px; }
   .fase-hdr-title { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 4px; }
   .fase-hdr-sub { font-size: 13px; color: rgba(255,255,255,0.45); }
-
+ 
   /* SECÇÃO */
   .sec-titulo { border-left: 4px solid #C9A55A; padding-left: 12px; margin: 24px 0 8px; font-size: 17px; font-weight: 700; color: #1C2B40; }
-
+ 
   /* CARD */
   .card { border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 12px; overflow: hidden; }
   .card-header { background: #f5f5f5; padding: 10px 18px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; border-bottom: 1px solid #e0e0e0; }
@@ -44,7 +44,7 @@
   .card-header.red   { color: #B0391E; }
   .card-header.green { color: #1E6B4A; }
   .card-body { padding: 16px 18px; }
-
+ 
   /* CHECKLIST */
   .chk-item { display: flex; align-items: flex-start; gap: 14px; padding: 10px 10px; border-radius: 5px; cursor: pointer; margin-bottom: 4px; transition: background .15s; }
   .chk-item:hover { background: #FAF6EC; }
@@ -54,12 +54,12 @@
   .chk-text { font-size: 15px; color: #3A4E68; line-height: 1.7; }
   .chk-text strong { color: #1C2B40; }
   .chk-text em { color: #A8872E; font-style: normal; font-weight: 700; }
-
+ 
   /* SUB-LISTA */
   .sub { margin-top: 8px; padding-left: 14px; border-left: 3px solid #F5EDD6; }
   .sub li { font-size: 14px; color: #6E829A; line-height: 1.7; margin-bottom: 2px; }
   .sub li strong { color: #3A4E68; }
-
+ 
   /* ALERTAS */
   .alerta { border-radius: 4px; padding: 12px 16px; font-size: 14px; line-height: 1.7; margin-top: 12px; }
   .alerta.warn   { background: #FAF6EC; border-left: 3px solid #C9A55A; color: #A8872E; }
@@ -68,33 +68,33 @@
   .alerta.info   { background: #E8EDF3; border-left: 3px solid #1C2B40; color: #1C2B40; }
   .alerta.bloq   { background: #131E2D; border-left: 3px solid #C9A55A; color: #F7F5F0; }
   .alerta strong { font-weight: 700; }
-
+ 
   /* ÁRVORE */
   .tree { background: #131E2D; border-radius: 6px; padding: 16px 20px; font-family: 'Courier New', monospace; font-size: 13px; color: rgba(247,245,240,0.65); line-height: 2; margin-bottom: 16px; overflow-x: auto; }
   .tree .f { color: #C9A55A; font-weight: 700; }
   .tree .n { color: #7EC8A0; font-weight: 700; }
   .tree .nf { color: #7EC8A0; }
   .tree .g { color: rgba(247,245,240,0.3); font-style: italic; }
-
+ 
   /* NOME TAG */
   .tag { background: #1C2B40; color: #C9A55A; font-family: 'Courier New', monospace; font-size: 12px; padding: 2px 10px; border-radius: 3px; display: inline-block; margin: 2px 0; }
-
+ 
   /* SEÇÃO RESPONSÁVEL */
   .resp-label { border: 1px solid #C9A55A; border-radius: 4px; padding: 7px 14px; margin-bottom: 10px; font-size: 12px; font-weight: 700; color: #A8872E; text-transform: uppercase; letter-spacing: 1px; background: #FAF6EC; }
-
+ 
   /* TABELA NOMENCLATURA */
   .nom-table { width: 100%; border-collapse: collapse; border-radius: 6px; overflow: hidden; border: 1px solid #e0e0e0; font-size: 14px; }
   .nom-table thead td { background: #131E2D; color: #C9A55A; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 12px 16px; }
   .nom-table tbody tr:nth-child(even) { background: #FAF6EC; }
   .nom-table tbody td { padding: 10px 16px; border-top: 1px solid #e0e0e0; color: #6E829A; vertical-align: middle; }
-
+ 
   /* DIVIDER */
   .divider { border-top: 2px solid #C9A55A; padding-top: 24px; margin-top: 32px; }
   .divider-label { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; color: #1C2B40; margin-bottom: 18px; }
 </style>
 </head>
 <body>
-
+ 
 <!-- PROGRESS -->
 <div class="prog-wrap">
   <span class="prog-label">Progresso</span>
@@ -102,22 +102,22 @@
   <span class="prog-count" id="pc">0 / 0</span>
   <button class="prog-reset" onclick="resetAll()">Resetar</button>
 </div>
-
+ 
 <!-- HEADER -->
 <div class="hdr">
   <div class="hdr-firm">Lia Lopes · Advocacia Tributária</div>
   <div class="hdr-title">Checklist de <span>Abertura de Pastas</span></div>
   <div class="hdr-sub">Organização de arquivos do cliente — Prospects até Clientes</div>
 </div>
-
+ 
 <!-- TABS -->
 <div class="fase-tabs">
   <div class="fase-tab active" onclick="setFase(0)">Fase 1 — Prospect</div>
   <div class="fase-tab" onclick="setFase(1)">Fase 2 — Fechamento</div>
   <div class="fase-tab" onclick="setFase(2)">Fase 3 — Migração</div>
 </div>
-
-
+ 
+ 
 <!-- ══ FASE 1 ══ -->
 <div class="fase active" id="f0">
   <div class="fase-hdr">
@@ -127,17 +127,14 @@
       <div class="fase-hdr-sub">Execute assim que o lead entrar no processo.</div>
     </div>
   </div>
-
+ 
   <div class="tree">
 <span class="f">📁 Operações</span><br>
 └── <span class="f">📁 Prospects</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;└── <span class="n">📁 [Nome da Empresa]</span> &nbsp;&nbsp;← criar<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="n">📁 00_Diagnóstico</span> &nbsp;&nbsp;← criar<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <span class="nf">📄 Diagnóstico - [Nome da Empresa] - [Data]</span> &nbsp;&nbsp;← inserir PDF<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="n">📁 00_Simulações</span> &nbsp;&nbsp;← criar<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="n">📁 02_Reunião</span> &nbsp;&nbsp;← criar
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="n">📁 00_Diagnóstico</span> &nbsp;&nbsp;← criar
   </div>
-
+ 
   <div class="card">
     <div class="card-header navy">1 · Criar a pasta da empresa</div>
     <div class="card-body">
@@ -145,29 +142,18 @@
       <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Criar nova pasta com o <strong>nome da empresa</strong> exatamente como está na Razão Social.</span></div>
     </div>
   </div>
-
+ 
   <div class="card">
-    <div class="card-header navy">2 · Criar 00_Diagnóstico e inserir o PDF</div>
+    <div class="card-header navy">2 · Criar pasta 00_Diagnóstico</div>
     <div class="card-body">
       <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Dentro da pasta da empresa, criar <span class="tag">00_Diagnóstico</span>.</span></div>
-      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Inserir o PDF do diagnóstico renomeado como:<br><span class="tag">Diagnóstico - [Nome da Empresa] - [DD.MM.AAAA]</span>
-        <ul class="sub"><li>Ex: <strong>Diagnóstico - Lumava Engenharia - 15.04.2026</strong></li></ul>
-      </span></div>
     </div>
   </div>
-
-  <div class="card">
-    <div class="card-header navy">3 · Criar subpastas dentro de 00_Diagnóstico</div>
-    <div class="card-body">
-      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Criar <span class="tag">00_Simulações</span> dentro de <strong>00_Diagnóstico</strong>.</span></div>
-      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Criar <span class="tag">02_Reunião</span> dentro de <strong>00_Simulações</strong>.</span></div>
-    </div>
-  </div>
-
-  <div class="alerta ok">✅ Fase 1 concluída. Avance para a <strong>Fase 2</strong> quando o lead entrar em processo de fechamento.</div>
+ 
+  <div class="alerta ok">✅ Fase 1 concluída. Avance para a <strong>Fase 2</strong> quando o lead avançar para fechamento.</div>
 </div>
-
-
+ 
+ 
 <!-- ══ FASE 2 ══ -->
 <div class="fase" id="f1">
   <div class="fase-hdr">
@@ -177,27 +163,41 @@
       <div class="fase-hdr-sub">Execute quando o lead avançar para fechamento.</div>
     </div>
   </div>
-
+ 
   <div class="tree">
 <span class="f">📁 [Nome da Empresa]</span><br>
 ├── <span style="color:rgba(247,245,240,0.4);">📁 00_Diagnóstico</span> &nbsp;<span class="g">(já existe)</span><br>
+│&nbsp;&nbsp;&nbsp;├── <span class="nf">📄 Diagnóstico - [Nome da Empresa] - [Data de entrega]</span> &nbsp;&nbsp;← inserir agora<br>
+│&nbsp;&nbsp;&nbsp;└── <span class="nf">📄 Transcrição - [Nome da Empresa] - [Data de entrega]</span> &nbsp;&nbsp;← inserir agora<br>
 ├── <span class="n">📁 01_Contrato</span><br>
 │&nbsp;&nbsp;&nbsp;└── <span class="n">📁 01_Assinado</span> &nbsp;&nbsp;← inserir contrato assinado<br>
-├── <span class="n">📁 02_Documentações Base</span><br>
-│&nbsp;&nbsp;&nbsp;├── <span class="n">📁 01_Societário</span><br>
-│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <span class="nf">📄 CONTRATO SOCIAL - [NOME DA EMPRESA]</span><br>
-│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── <span class="nf">📄 ALTERAÇÃO CONTRATUAL - [NOME DA EMPRESA]</span> &nbsp;<span class="g">(se houver)</span><br>
-│&nbsp;&nbsp;&nbsp;├── <span class="n">📁 02_Responsável Legal</span> &nbsp;<span class="g">(ver regra abaixo)</span><br>
-│&nbsp;&nbsp;&nbsp;└── <span class="n">📁 03_Certificado Digital</span><br>
-├── <span class="n">📁 04_Procurações</span><br>
-│&nbsp;&nbsp;&nbsp;├── <span class="n">📁 01_Elaboradas</span><br>
-│&nbsp;&nbsp;&nbsp;└── <span class="n">📁 02_Assinadas</span><br>
-└── <span class="n">📁 03_GPT</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="n">📁 2026.1</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── <span class="n">📁 01_RFB</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="n">📁 02_PGFN</span>
+└── <span class="n">📁 02_Documentações Base</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;├── <span class="n">📁 01_Societário</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <span class="nf">📄 CONTRATO SOCIAL - [NOME DA EMPRESA]</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── <span class="nf">📄 ALTERAÇÃO CONTRATUAL - [NOME DA EMPRESA]</span> &nbsp;<span class="g">(se houver)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;├── <span class="n">📁 02_Responsável Legal</span> &nbsp;<span class="g">(ver regra abaixo)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="n">📁 03_Certificado Digital</span>
   </div>
-
+ 
+  <!-- PDF Diagnóstico e Transcrição -->
+  <div class="sec-titulo">00_Diagnóstico — Inserir os PDFs</div>
+  <div class="card">
+    <div class="card-body">
+      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Inserir o PDF do diagnóstico dentro de <strong>00_Diagnóstico</strong>, renomeado como:<br><span class="tag">Diagnóstico - [Nome da Empresa] - [DD.MM.AAAA]</span>
+        <ul class="sub">
+          <li>Ex: <strong>Diagnóstico - Lumava Engenharia - 15.04.2026</strong></li>
+          <li>A data deve ser a <strong>data em que o diagnóstico foi entregue</strong> ao cliente</li>
+        </ul>
+      </span></div>
+      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Inserir o PDF da transcrição da reunião na mesma pasta, renomeado como:<br><span class="tag">Transcrição - [Nome da Empresa] - [DD.MM.AAAA]</span>
+        <ul class="sub">
+          <li>Ex: <strong>Transcrição - Lumava Engenharia - 15.04.2026</strong></li>
+          <li>A data deve ser a <strong>data em que o diagnóstico foi entregue</strong> ao cliente</li>
+        </ul>
+      </span></div>
+    </div>
+  </div>
+ 
   <!-- 01_Contrato -->
   <div class="sec-titulo">01_Contrato</div>
   <div class="card">
@@ -208,7 +208,7 @@
       <div class="alerta info">💡 O contrato elaborado <strong>não precisa ser salvo</strong> — fica no Bitrix. Salvar aqui apenas o PDF <strong>assinado</strong> pela empresa.</div>
     </div>
   </div>
-
+ 
   <!-- 01_Societário -->
   <div class="sec-titulo">02_Documentações Base → 01_Societário</div>
   <div class="card">
@@ -222,10 +222,10 @@
       </span></div>
     </div>
   </div>
-
+ 
   <!-- 02_Responsável Legal -->
   <div class="sec-titulo">02_Documentações Base → 02_Responsável Legal</div>
-
+ 
   <div class="resp-label">▶ Se houver 1 responsável legal</div>
   <div class="card">
     <div class="card-body">
@@ -239,7 +239,7 @@
       <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Se casado, inserir a Certidão de Casamento renomeada como:<br><span class="tag">Certidão de Casamento - [Nome Completo]</span></span></div>
     </div>
   </div>
-
+ 
   <div class="resp-label">▶ Se houver 2 ou mais responsáveis legais</div>
   <div class="card">
     <div class="card-body">
@@ -257,7 +257,7 @@
       <div class="alerta warn">💡 Repetir para <strong>todos os responsáveis legais</strong>. Cada um com sua própria pasta.</div>
     </div>
   </div>
-
+ 
   <!-- 03_Certificado Digital -->
   <div class="sec-titulo">02_Documentações Base → 03_Certificado Digital</div>
   <div class="card">
@@ -269,32 +269,29 @@
       <div class="alerta danger">🚨 Acesso restrito. Certifique-se de que apenas pessoas autorizadas têm acesso a esta pasta.</div>
     </div>
   </div>
-
-  <!-- 04_Procurações -->
-  <div class="sec-titulo">04_Procurações</div>
-  <div class="card">
-    <div class="card-body">
-      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Criar <span class="tag">04_Procurações</span> dentro da pasta da empresa.</span></div>
-      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Dentro de <strong>04_Procurações</strong>, criar <span class="tag">01_Elaboradas</span>.</span></div>
-      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Dentro de <strong>04_Procurações</strong>, criar <span class="tag">02_Assinadas</span>.</span></div>
-    </div>
+ 
+  <!-- NOMENCLATURA -->
+  <div class="divider">
+    <div class="divider-label">Referência Rápida — Nomenclatura de Arquivos</div>
+    <table class="nom-table">
+      <thead><tr><td>Documento</td><td>Nome do arquivo</td></tr></thead>
+      <tbody>
+        <tr><td>Diagnóstico</td><td><span class="tag">Diagnóstico - [Nome da Empresa] - [DD.MM.AAAA]</span></td></tr>
+        <tr><td>Transcrição da Reunião</td><td><span class="tag">Transcrição - [Nome da Empresa] - [DD.MM.AAAA]</span></td></tr>
+        <tr><td>Contrato Social</td><td><span class="tag">CONTRATO SOCIAL - [NOME DA EMPRESA]</span></td></tr>
+        <tr><td>Alteração Contratual</td><td><span class="tag">ALTERAÇÃO CONTRATUAL - [NOME DA EMPRESA]</span></td></tr>
+        <tr><td>CNH / Identidade</td><td><span class="tag">[Nome Completo do Responsável]</span></td></tr>
+        <tr><td>Comprovante de Residência</td><td><span class="tag">Comprovante de Endereço - [Nome Completo]</span></td></tr>
+        <tr><td>Certidão de Casamento</td><td><span class="tag">Certidão de Casamento - [Nome Completo]</span></td></tr>
+        <tr><td>Certificado Digital (senha)</td><td><span class="tag">[Nome da Empresa] - Senha [senha]</span></td></tr>
+      </tbody>
+    </table>
   </div>
-
-  <!-- 03_GPT -->
-  <div class="sec-titulo">03_GPT</div>
-  <div class="card">
-    <div class="card-body">
-      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Criar <span class="tag">03_GPT</span> dentro da pasta da empresa.</span></div>
-      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Dentro de <strong>03_GPT</strong>, criar <span class="tag">2026.1</span>.</span></div>
-      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Dentro de <strong>2026.1</strong>, criar <span class="tag">01_RFB</span>.</span></div>
-      <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Dentro de <strong>2026.1</strong>, criar <span class="tag">02_PGFN</span>.</span></div>
-    </div>
-  </div>
-
-  <div class="alerta ok">✅ Fase 2 concluída. Avance para a <strong>Fase 3</strong> após o lead assinar e pagar a entrada.</div>
+ 
+  <div class="alerta ok" style="margin-top:16px;">✅ Fase 2 concluída. Avance para a <strong>Fase 3</strong> após o lead assinar e pagar a entrada.</div>
 </div>
-
-
+ 
+ 
 <!-- ══ FASE 3 ══ -->
 <div class="fase" id="f2">
   <div class="fase-hdr">
@@ -304,9 +301,9 @@
       <div class="fase-hdr-sub">Execute somente após assinatura e pagamento da entrada confirmados.</div>
     </div>
   </div>
-
+ 
   <div class="alerta bloq">🔒 <strong>Só execute esta fase após confirmação de assinatura e pagamento da entrada.</strong> Migrar antes é um erro de processo.</div>
-
+ 
   <div class="tree" style="margin-top:14px;">
 <span class="f">📁 Operações</span><br>
 ├── <span style="color:rgba(247,245,240,0.4);">📁 Prospects</span> &nbsp;<span class="g">← mover daqui</span><br>
@@ -314,7 +311,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;└── <span class="f">📁 L</span> &nbsp;<span class="g">(exemplo: LUMAVA → pasta L)</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="n">📁 [Nome da Empresa]</span> &nbsp;← para aqui
   </div>
-
+ 
   <div class="card">
     <div class="card-header navy">Migração</div>
     <div class="card-body">
@@ -330,7 +327,7 @@
       <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Mover a pasta de <strong>Prospects</strong> para dentro da letra correta em <strong>Clientes</strong>.</span></div>
     </div>
   </div>
-
+ 
   <div class="card">
     <div class="card-header red">Verificação final</div>
     <div class="card-body">
@@ -340,28 +337,11 @@
       <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Toda a estrutura da <strong>Fase 2</strong> está completa e corretamente nomeada.</span></div>
     </div>
   </div>
-
+ 
   <div class="alerta ok">🏛️ <strong>Cliente oficialmente integrado.</strong> Pasta em Clientes, organizada e pronta para a equipe operacional.</div>
 </div>
-
-
-<!-- NOMENCLATURA -->
-<div class="divider">
-  <div class="divider-label">Referência Rápida — Nomenclatura de Arquivos</div>
-  <table class="nom-table">
-    <thead><tr><td>Documento</td><td>Nome do arquivo</td></tr></thead>
-    <tbody>
-      <tr><td>Diagnóstico</td><td><span class="tag">Diagnóstico - [Nome da Empresa] - [DD.MM.AAAA]</span></td></tr>
-      <tr><td>Contrato Social</td><td><span class="tag">CONTRATO SOCIAL - [NOME DA EMPRESA]</span></td></tr>
-      <tr><td>Alteração Contratual</td><td><span class="tag">ALTERAÇÃO CONTRATUAL - [NOME DA EMPRESA]</span></td></tr>
-      <tr><td>CNH / Identidade</td><td><span class="tag">[Nome Completo do Responsável]</span></td></tr>
-      <tr><td>Comprovante de Residência</td><td><span class="tag">Comprovante de Endereço - [Nome Completo]</span></td></tr>
-      <tr><td>Certidão de Casamento</td><td><span class="tag">Certidão de Casamento - [Nome Completo]</span></td></tr>
-      <tr><td>Certificado Digital (senha)</td><td><span class="tag">[Nome da Empresa] - Senha [senha]</span></td></tr>
-    </tbody>
-  </table>
-</div>
-
+ 
+ 
 <script>
 function tog(el) { el.classList.toggle('done'); upd(); }
 function upd() {

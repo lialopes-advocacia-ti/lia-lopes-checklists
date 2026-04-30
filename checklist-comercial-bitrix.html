@@ -3,7 +3,7 @@
 <head><meta charset="UTF-8">
 <style>
   body { font-family: Arial, sans-serif; max-width: 860px; margin: 0 auto; padding: 24px; color: #1C2B40; background: #fff; font-size: 16px; }
-
+ 
   /* PROGRESS */
   .prog-wrap { position: sticky; top: 0; z-index: 100; background: #131E2D; padding: 10px 20px; border-radius: 6px; margin-bottom: 20px; display: flex; align-items: center; gap: 14px; border-bottom: 2px solid #C9A55A; }
   .prog-label { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #C9A55A; font-weight: 700; white-space: nowrap; }
@@ -12,22 +12,22 @@
   .prog-count { font-size: 13px; color: rgba(255,255,255,0.45); white-space: nowrap; }
   .prog-reset { background: none; border: 1px solid rgba(201,165,90,0.4); color: #C9A55A; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 5px 12px; cursor: pointer; border-radius: 3px; font-family: Arial, sans-serif; }
   .prog-reset:hover { background: rgba(201,165,90,0.12); }
-
+ 
   /* HEADER */
   .hdr { background: #131E2D; padding: 28px 32px; border-radius: 6px; margin-bottom: 8px; border-bottom: 3px solid #C9A55A; }
   .hdr-firm { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #C9A55A; font-weight: 700; margin-bottom: 8px; }
   .hdr-title { font-size: 30px; color: #fff; font-weight: 300; margin-bottom: 6px; }
   .hdr-title span { color: #C9A55A; font-style: italic; }
   .hdr-sub { font-size: 13px; color: rgba(255,255,255,0.4); }
-
+ 
   /* AVISO */
   .aviso { background: #B0391E; padding: 14px 20px; border-radius: 4px; margin-bottom: 28px; color: #fff; font-size: 15px; font-weight: 600; }
-
+ 
   /* ETAPA TÍTULO */
   .etapa-titulo { border-left: 4px solid #C9A55A; padding-left: 14px; margin: 32px 0 10px; }
   .etapa-num { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #C9A55A; font-weight: 700; margin-bottom: 4px; }
   .etapa-nome { font-size: 22px; font-weight: 700; color: #1C2B40; }
-
+ 
   /* CARD */
   .card { border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 12px; overflow: hidden; }
   .card-header { background: #f5f5f5; padding: 10px 18px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; border-bottom: 1px solid #e0e0e0; }
@@ -35,7 +35,7 @@
   .card-header.red   { color: #B0391E; }
   .card-header.green { color: #1E6B4A; }
   .card-body { padding: 16px 18px; }
-
+ 
   /* CHECKLIST */
   .chk-item { display: flex; align-items: flex-start; gap: 14px; padding: 10px 10px; border-radius: 5px; cursor: pointer; margin-bottom: 4px; transition: background .15s; }
   .chk-item:hover { background: #FAF6EC; }
@@ -45,12 +45,12 @@
   .chk-text { font-size: 15px; color: #3A4E68; line-height: 1.7; }
   .chk-text strong { color: #1C2B40; }
   .chk-text em { color: #A8872E; font-style: normal; font-weight: 700; }
-
+ 
   /* SUB-LISTA */
   .sub { margin-top: 8px; padding-left: 14px; border-left: 3px solid #F5EDD6; }
   .sub li { font-size: 14px; color: #6E829A; line-height: 1.7; margin-bottom: 2px; }
   .sub li strong { color: #3A4E68; }
-
+ 
   /* ALERTAS */
   .alerta { border-radius: 4px; padding: 12px 16px; font-size: 14px; line-height: 1.7; margin-top: 12px; }
   .alerta.warn   { background: #FAF6EC; border-left: 3px solid #C9A55A; color: #A8872E; }
@@ -58,7 +58,7 @@
   .alerta.ok     { background: #E5F3EC; border-left: 3px solid #1E6B4A; color: #1E6B4A; }
   .alerta.bloq   { background: #131E2D; border-left: 3px solid #C9A55A; color: #F7F5F0; }
   .alerta strong { font-weight: 700; }
-
+ 
   /* PONTOS DE ATENÇÃO */
   .atencao-grid { display: table; width: 100%; border-collapse: collapse; }
   .atencao-row  { display: table-row; }
@@ -67,7 +67,7 @@
   .atencao-n    { font-size: 26px; color: #C9A55A; font-weight: 700; line-height: 1; margin-bottom: 6px; }
   .atencao-t    { font-size: 12px; font-weight: 700; text-transform: uppercase; color: #1C2B40; margin-bottom: 5px; }
   .atencao-d    { font-size: 14px; color: #6E829A; line-height: 1.6; }
-
+ 
   /* FAQ */
   .faq-item { border: 1px solid #e0e0e0; border-radius: 5px; margin-bottom: 8px; overflow: hidden; }
   .faq-q { background: #f5f5f5; padding: 14px 18px; cursor: pointer; display: flex; align-items: flex-start; gap: 12px; font-size: 15px; font-weight: 600; color: #1C2B40; user-select: none; }
@@ -77,14 +77,14 @@
   .faq-item.open .faq-arrow { transform: rotate(180deg); }
   .faq-a { display: none; padding: 14px 18px; font-size: 15px; color: #3A4E68; line-height: 1.7; border-top: 1px solid #e0e0e0; }
   .faq-item.open .faq-a { display: block; }
-
+ 
   /* DIVIDER */
   .divider { border-top: 2px solid #C9A55A; padding-top: 24px; margin-top: 32px; }
   .divider-label { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; color: #1C2B40; margin-bottom: 18px; }
 </style>
 </head>
 <body>
-
+ 
 <!-- PROGRESS -->
 <div class="prog-wrap">
   <span class="prog-label">Progresso</span>
@@ -92,23 +92,23 @@
   <span class="prog-count" id="pc">0 / 0</span>
   <button class="prog-reset" onclick="resetAll()">Resetar</button>
 </div>
-
+ 
 <!-- HEADER -->
 <div class="hdr">
   <div class="hdr-firm">Lia Lopes · Advocacia Tributária</div>
   <div class="hdr-title">Checklist do <span>Comercial</span></div>
   <div class="hdr-sub">Processo completo — Card, Contrato, Assinatura e Envio ao Lead</div>
 </div>
-
+ 
 <div class="aviso">⚠️ Qualquer campo vazio ou dado incorreto pode interromper todo o processo e gerar prejuízo. Valide cada etapa com atenção máxima antes de avançar.</div>
-
-
+ 
+ 
 <!-- ── ETAPA 1 ── -->
 <div class="etapa-titulo">
   <div class="etapa-num">Etapa 1</div>
   <div class="etapa-nome">Entrada do Lead — CNPJ e Dados da Receita</div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header navy">Preenchimento do CNPJ</div>
   <div class="card-body">
@@ -116,7 +116,7 @@
     <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text">Aguardar o sistema puxar automaticamente os dados da <strong>Receita Federal</strong>.</span></div>
   </div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header red">Verificar os dados retornados</div>
   <div class="card-body">
@@ -125,14 +125,14 @@
     <div class="alerta warn">💡 Se algum dado não vier ou vier incorreto, preencher ou corrigir manualmente antes de continuar.</div>
   </div>
 </div>
-
-
+ 
+ 
 <!-- ── ETAPA 2 ── -->
 <div class="etapa-titulo">
   <div class="etapa-num">Etapa 2</div>
   <div class="etapa-nome">Verificação Completa — Antes de Avançar para "Contrato"</div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header red">2A — Documentação Completa</div>
   <div class="card-body">
@@ -145,7 +145,7 @@
     <div class="alerta warn">💡 O padrão de renomeação está detalhado no <strong>Checklist de Abertura de Pastas</strong>.</div>
   </div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header red">2B — Condições de Fechamento (última página do Diagnóstico)</div>
   <div class="card-body">
@@ -161,7 +161,7 @@
     <div class="alerta danger">🚨 <strong>Atenção ao valor parcelado:</strong> "Valor total do contrato" = soma de TODAS as parcelas — nunca o valor à vista.</div>
   </div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header red">2C — Dados de Contato do Responsável Legal (campo "Contato" do deal)</div>
   <div class="card-body">
@@ -178,41 +178,75 @@
     <div class="alerta danger">🚨 <strong>Nome, e-mail e telefone do responsável são obrigatórios dentro do campo "Contato" do deal.</strong> O contrato e o boleto serão enviados a esses dados — qualquer erro compromete todo o processo.</div>
   </div>
 </div>
-
+ 
 <div class="alerta bloq">🔒 <strong>Só avance o lead para a etapa "Contrato" após confirmar todos os itens acima.</strong> Nenhum item pode estar pendente ou em dúvida.</div>
-
-
+ 
+ 
 <!-- ── ETAPA 3 ── -->
 <div class="etapa-titulo">
   <div class="etapa-num">Etapa 3</div>
   <div class="etapa-nome">Preencher Dados no Card — Etapa "Contrato"</div>
 </div>
-
+ 
 <div class="card">
-  <div class="card-header navy">Campos obrigatórios no Bitrix</div>
+  <div class="card-header navy">Dados da Empresa</div>
   <div class="card-body">
-    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Nome completo e/ou Razão Social</strong></span></div>
-    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>CPF ou CNPJ</strong> <em>(apenas números, sem pontos ou traços)</em></span></div>
-    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Endereço completo:</strong> rua, número, complemento, bairro, CEP, cidade, UF</span></div>
-    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Nome do responsável</strong> que vai assinar <em>(dentro do campo "Contato" do deal)</em></span></div>
-    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>E-mail do responsável</strong> que vai assinar <em>(dentro do campo "Contato" do deal)</em></span></div>
-    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Telefone do responsável</strong> que vai assinar <em>(dentro do campo "Contato" do deal)</em></span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Nome / Razão Social</strong> da empresa preenchido</span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>CNPJ</strong> preenchido <em>(apenas números, sem pontos ou traços)</em></span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Endereço</strong> completo: rua, número, complemento, bairro, CEP, cidade, UF</span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Link Diagnóstico</strong> inserido no campo correspondente</span></div>
+  </div>
+</div>
+ 
+<div class="card">
+  <div class="card-header navy">Responsável Legal 1 — dentro do campo "Contato" do deal</div>
+  <div class="card-body">
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Responsável Legal 1</strong> — nome completo</span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Resp1 - CPF</strong> <em>(apenas números)</em></span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Resp1 - RG</strong></span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Resp1 - Endereço</strong> completo</span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>E-mail</strong> do Responsável 1 <em>(deve ser o e-mail pessoal do responsável, não de terceiros)</em></span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Telefone</strong> do Responsável 1</span></div>
+  </div>
+</div>
+ 
+<div class="card">
+  <div class="card-header navy">Responsável Legal 2 — se houver</div>
+  <div class="card-body">
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Responsável Legal 2</strong> — nome completo</span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Resp2 - CPF</strong> <em>(apenas números)</em></span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Resp2 - RG</strong></span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Resp2 - Endereço</strong> completo</span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>E-mail</strong> do Responsável 2</span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Telefone</strong> do Responsável 2</span></div>
+    <div class="alerta warn">💡 Preencher apenas se houver segundo responsável legal. Se não houver, deixar em branco.</div>
+  </div>
+</div>
+ 
+<div class="card">
+  <div class="card-header navy">Condições Financeiras</div>
+  <div class="card-body">
     <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Valor total do contrato</strong> <em>(se parcelado: soma de todas as parcelas)</em></span></div>
     <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Valor da entrada</strong></span></div>
     <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Valor da parcela</strong></span></div>
     <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Data do primeiro vencimento</strong> (da entrada)</span></div>
-    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Quantidade de parcelas</strong></span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Entrada - Qtd parcelas restantes</strong> — quantidade de parcelas restantes após a entrada</span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Entrada - Valor parcelas restantes</strong> — valor de cada parcela restante</span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Entrada - Vencimento 1ª parcela</strong> — data de vencimento da primeira parcela após a entrada</span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Entrada - Dia vencimento das próximas</strong> — dia do mês em que as demais parcelas vencem <em>(ex: 20)</em></span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Êxito - Percentual</strong> — percentual de êxito acordado <em>(ex: 10)</em></span></div>
+    <div class="chk-item" onclick="tog(this)"><div class="chk-box">✓</div><span class="chk-text"><strong>Êxito - Qtd parcelas</strong> — quantidade de parcelas do êxito <em>(ex: 20)</em></span></div>
     <div class="alerta warn">💡 Revise cada campo com calma. Dado errado gera contrato errado e cobrança errada — exige refazer tudo do zero.</div>
   </div>
 </div>
-
-
+ 
+ 
 <!-- ── ETAPA 4 ── -->
 <div class="etapa-titulo">
   <div class="etapa-num">Etapa 4</div>
   <div class="etapa-nome">Gerar e Verificar o Contrato</div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header navy">Gerar o documento no Bitrix</div>
   <div class="card-body">
@@ -228,7 +262,7 @@
     <div class="alerta warn">💡 O número de responsáveis está no <strong>Contrato Social</strong>. Modelo errado exige refazer o processo.</div>
   </div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header red">Verificar atentamente o contrato gerado</div>
   <div class="card-body">
@@ -240,7 +274,7 @@
     <div class="alerta danger">🚨 Encontrou algum erro? Use o botão <strong>"Editar"</strong> no contrato dentro do Bitrix. <strong>Não envie para a Autentique enquanto houver qualquer erro.</strong></div>
   </div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header navy">Enviar para a Autentique</div>
   <div class="card-body">
@@ -249,14 +283,14 @@
     <div class="alerta warn">⏳ O link do contrato leva em média <strong>10 minutos</strong> para aparecer. Enquanto isso, passe para a verificação do boleto.</div>
   </div>
 </div>
-
-
+ 
+ 
 <!-- ── ETAPA 5 ── -->
 <div class="etapa-titulo">
   <div class="etapa-num">Etapa 5 — Enquanto aguarda o link do contrato</div>
   <div class="etapa-nome">Verificar o Boleto — Nibo</div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header red">Conferir o boleto da entrada</div>
   <div class="card-body">
@@ -266,14 +300,14 @@
     <div class="alerta ok">ℹ️ O boleto <strong>não tem juros nem multa</strong> por atraso. Pode informar ao lead se solicitado.</div>
   </div>
 </div>
-
-
+ 
+ 
 <!-- ── ETAPA 6 ── -->
 <div class="etapa-titulo">
   <div class="etapa-num">Etapa 6</div>
   <div class="etapa-nome">Verificar o Link — Autentique</div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header red">Quando o link aparecer no card</div>
   <div class="card-body">
@@ -282,14 +316,14 @@
     <div class="alerta warn">⏳ Se o link <strong>não aparecer após 15 minutos</strong>, avisar a gestão/suporte imediatamente.</div>
   </div>
 </div>
-
-
+ 
+ 
 <!-- ── ETAPA 7 ── -->
 <div class="etapa-titulo">
   <div class="etapa-num">Etapa 7</div>
   <div class="etapa-nome">Envio ao Lead</div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header navy">Enviar os dois links juntos pelo WhatsApp</div>
   <div class="card-body">
@@ -304,14 +338,14 @@
     <div class="alerta danger">🔒 <strong>Não mover o card de etapa</strong> enquanto o lead não assinar e não pagar a entrada. O card permanece em "Contrato" até os dois serem concluídos.</div>
   </div>
 </div>
-
-
+ 
+ 
 <!-- ── ETAPA 8 ── -->
 <div class="etapa-titulo">
   <div class="etapa-num">Etapa 8 — Após assinatura e pagamento confirmados</div>
   <div class="etapa-nome">Organização — Pós Assinatura e Pagamento</div>
 </div>
-
+ 
 <div class="card">
   <div class="card-header green">Após lead assinar e pagar a entrada</div>
   <div class="card-body">
@@ -322,8 +356,8 @@
     <div class="alerta ok">✅ Mova o lead para <strong>"Negócios Fechados"</strong>. Sua parte está concluída. O sistema assume: gera as parcelas restantes, emite os boletos automaticamente e, em breve, dispara a régua de lembretes por WhatsApp.</div>
   </div>
 </div>
-
-
+ 
+ 
 <!-- PONTOS DE ATENÇÃO -->
 <div class="divider">
   <div class="divider-label">Pontos de Atenção</div>
@@ -342,12 +376,12 @@
     </div>
   </div>
 </div>
-
-
+ 
+ 
 <!-- FAQ -->
 <div class="divider">
   <div class="divider-label">Dúvidas Frequentes</div>
-
+ 
   <div class="faq-item" onclick="faq(this)">
     <div class="faq-q"><span class="faq-badge">P</span>Preciso gerar o boleto manualmente no Nibo?<span class="faq-arrow">▾</span></div>
     <div class="faq-a">Não. O sistema gera automaticamente. Você apenas abre o link disponível no card, confere os dados e envia ao lead.</div>
@@ -373,7 +407,7 @@
     <div class="faq-a">Use o botão <strong>"Editar"</strong> no contrato dentro do Bitrix. <strong>Não envie nada para a Autentique enquanto houver erro.</strong> Corrija primeiro, valide tudo e só então envie.</div>
   </div>
 </div>
-
+ 
 <script>
 function tog(el) { el.classList.toggle('done'); upd(); }
 function faq(el) { el.classList.toggle('open'); }
